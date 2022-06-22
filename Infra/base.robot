@@ -17,3 +17,8 @@ Open Session
 Close Session
     Close Browser
 
+
+Ir Para
+        [Arguments]     ${path}
+        Go To       ${base_url}${path}
+
