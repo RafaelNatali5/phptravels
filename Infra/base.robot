@@ -2,15 +2,15 @@
 Library     SeleniumLibrary
 Library     BuiltIn
 Library     Library/Uteis.py
+Library     Library/Config.py
 
 *** Variables ***
-${base_url}      https://www.phptravels.net/
-
-
 
 *** Keywords ***
 Open Session
-    Open Browser    ${base_url}     chrome
+    ${base_url}=        Pegar Valor Json       base_url
+    ${browser}=         Pegar Valor Json       browser
+    Open Browser    ${base_url}     ${browser}
     Get Selenium speed
     Maximize Browser Window
 

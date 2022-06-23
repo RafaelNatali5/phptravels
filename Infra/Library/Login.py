@@ -4,5 +4,14 @@ class Login():
     def sortear_nome(self):
         firtnames = ['Abby', 'Barbara', 'Maicon', 'Milene', 'Robson', 'Jorge', 'Carlos', 'Gustavo']
         return random.choice(firtnames)
+    
+    def sortear_sobrenome(self):
+        lastnames = ['Pereira', 'Bueno', 'Silva', 'Goncalves', 'Santana', 'Castro', 'Dias', 'Tundra']
+        return random.choice(lastnames)
 
-print(Login.sortear_nome(Login))
+    def sortear_email(self):
+        emails = ['gmail', 'outlook', 'hotmail', 'yahoo', 'bing', 'bol', 'uol']
+        nome,sobrenome = self.sortear_nome(self),self.sortear_sobrenome(self)
+        email=random.choice(emails)
+        email_return = nome+sobrenome+'@'+email+'.com'
+        return email_return
