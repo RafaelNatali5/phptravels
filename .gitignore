@@ -5,3 +5,4 @@ output
 .vscode
 Comando Abrir.txt
 __pycache__
+*.png
