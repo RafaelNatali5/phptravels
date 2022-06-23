@@ -6,3 +6,4 @@ output
 Comando Abrir.txt
 __pycache__
 *.png
+*.pyc
