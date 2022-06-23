@@ -4,7 +4,7 @@ Resource        ./AccountPage.robot
 ***Variables***
 ${txtUsername}      xpath://input[@placeholder="Email"]
 ${txtPassword}      xpath://input[@placeholder="Password"]
-${btnLogin}         xpath://*[@id="fadein"]/div[1]/div/div[2]/div[2]/div/form/div[3]/button
+${btnLogin}         xpath://button[./span[text()="Login"]]
 
 ***Keywords
 #Funções
