@@ -11,7 +11,10 @@ class Login():
 
     def sortear_email(self):
         emails = ['gmail', 'outlook', 'hotmail', 'yahoo', 'bing', 'bol', 'uol']
-        nome,sobrenome = self.sortear_nome(self),self.sortear_sobrenome(self)
+        firstnames = ['Abby', 'Barbara', 'Maicon', 'Milene', 'Robson', 'Jorge', 'Carlos', 'Gustavo']
+        lastnames = ['Pereira', 'Bueno', 'Silva', 'Goncalves', 'Santana', 'Castro', 'Dias', 'Tundra']
+        nome=random.choice(firstnames)
+        sobrenome=random.choice(lastnames)
         email=random.choice(emails)
         email_return = nome+sobrenome+'@'+email+'.com'
         return email_return

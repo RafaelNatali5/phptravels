@@ -46,21 +46,21 @@ Acessar o site de Registro
 
 
 Realize preenchimento
-    [Arguments]     ${firstname}        ${lastname}     ${phone}        ${email}        ${password}
+    [Arguments]     ${firstname}        ${lastname}         ${email}            ${phone}            ${password}
     Escrever primeiro nome registro         ${firstname}
     Escrever ultimo nome registro           ${lastname} 
-    Escrever telefone registro              ${phone}
     Escrever email registro                 ${email}
+    Escrever telefone registro              ${phone}
     Escrever senha registro                 ${password}
 
 Preencher as informações da tela
     ${firstname}=       Sortear Nome
     ${lastname}=        Sortear Sobrenome
-    Realize preenchimento   ${firstname}        ${lastname}      1234567890      nome2s2323@exemple.com        abc123
+    ${email}=           Sortear Email
+    Realize preenchimento  ${firstname}  ${lastname}  ${email}  123456789  password
     Click Element       ${account_type}
     Selecionar Tipo     Agent
-    Sleep       10s
-    
+
 Clicar em Registrar
     Clicar botao signup 
 
