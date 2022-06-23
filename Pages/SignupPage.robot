@@ -1,5 +1,8 @@
 ***Settings***
 Resource        ../Infra/base.robot
+Resource        ../Pages/LoginPage.robot
+Library         ../Library/Config.py
+Library         ../Library/Login.py
 
 ***Variables***
 ${account_type}             xpath://span[@class="selection"]/span
@@ -41,7 +44,8 @@ Clicar botao signup
 
 Acessar o site de Registro
     Ir Para     signup
-    
+
+
 Realize preenchimento
     [Arguments]     ${firstname}        ${lastname}     ${phone}        ${email}        ${password}
     Escrever primeiro nome registro         ${firstname}
@@ -51,14 +55,13 @@ Realize preenchimento
     Escrever senha registro                 ${password}
 
 Preencher as informações da tela   
-    Realize preenchimento   PrimeiroNome        UltimoNome      1234567890      nome22@exemple.com        abc123
+    Realize preenchimento   Sortear Nome        UltimoNome      1234567890      nome2232@exemple.com        abc123
     Click Element       ${account_type}
     Selecionar Tipo     Agent
-    Sleep       5s
-
+    Sleep       10s
 Clicar em Registrar
     Clicar botao signup 
-    Sleep       30s
 
 Deve ser redirecionado para a tela de login
+    Verificar label Login
     
