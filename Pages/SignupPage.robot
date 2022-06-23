@@ -53,11 +53,14 @@ Realize preenchimento
     Escrever email registro                 ${email}
     Escrever senha registro                 ${password}
 
-Preencher as informações da tela   
-    Realize preenchimento   Sortear Nome        UltimoNome      1234567890      nome2232@exemple.com        abc123
+Preencher as informações da tela
+    ${firstname}=       Sortear Nome
+    ${lastname}=        Sortear Sobrenome
+    Realize preenchimento   ${firstname}        ${lastname}      1234567890      nome2s2323@exemple.com        abc123
     Click Element       ${account_type}
     Selecionar Tipo     Agent
     Sleep       10s
+    
 Clicar em Registrar
     Clicar botao signup 
 
