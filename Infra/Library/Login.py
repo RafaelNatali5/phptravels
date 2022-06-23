@@ -2,8 +2,8 @@ import random
 
 class Login():
     def sortear_nome(self):
-        firtnames = ['Abby', 'Barbara', 'Maicon', 'Milene', 'Robson', 'Jorge', 'Carlos', 'Gustavo']
-        return random.choice(firtnames)
+        firstnames = ['Abby', 'Barbara', 'Maicon', 'Milene', 'Robson', 'Jorge', 'Carlos', 'Gustavo']
+        return random.choice(firstnames)
     
     def sortear_sobrenome(self):
         lastnames = ['Pereira', 'Bueno', 'Silva', 'Goncalves', 'Santana', 'Castro', 'Dias', 'Tundra']

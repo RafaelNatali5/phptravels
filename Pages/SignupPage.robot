@@ -1,8 +1,7 @@
 ***Settings***
 Resource        ../Infra/base.robot
 Resource        ../Pages/LoginPage.robot
-Library         ../Library/Config.py
-Library         ../Library/Login.py
+
 
 ***Variables***
 ${account_type}             xpath://span[@class="selection"]/span

@@ -5,7 +5,7 @@ Resource        ./AccountPage.robot
 ${txtUsername}      xpath://input[@placeholder="Email"]
 ${txtPassword}      xpath://input[@placeholder="Password"]
 ${btnLogin}         xpath://button[./span[text()="Login"]]
-${lblLogin}      xpath://h5[contains(text(),"Login")]
+${lblLogin}         xpath://h5[contains(text(),"Login")]
 
 ***Keywords
 #Funções
