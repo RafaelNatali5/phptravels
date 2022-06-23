@@ -51,7 +51,7 @@ Realize preenchimento
     Escrever senha registro                 ${password}
 
 Preencher as informações da tela   
-    Realize preenchimento   sortear_nome()        UltimoNome      1234567890      nome22@exemple.com        abc123
+    Realize preenchimento   PrimeiroNome        UltimoNome      1234567890      nome22@exemple.com        abc123
     Click Element       ${account_type}
     Selecionar Tipo     Agent
     Sleep       5s
