@@ -51,10 +51,14 @@ Realize preenchimento
     Escrever senha registro                 ${password}
 
 Preencher as informações da tela   
-    Realize preenchimento   PrimeiroNome        UltimoNome      1234567890      nome@exemple.com        abc123
+    Realize preenchimento   sortear_nome()        UltimoNome      1234567890      nome22@exemple.com        abc123
     Click Element       ${account_type}
     Selecionar Tipo     Agent
     Sleep       5s
 
 Clicar em Registrar
     Clicar botao signup 
+    Sleep       30s
+
+Deve ser redirecionado para a tela de login
+    
