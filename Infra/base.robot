@@ -8,8 +8,8 @@ Library     Library/Config.py
 
 *** Keywords ***
 Open Session
-    ${base_url}=        Pegar Valor Json       base_url
-    ${browser}=         Pegar Valor Json       browser
+    ${base_url}=        Pegar Valor Json        base_url
+    ${browser}=         Pegar Valor Json        browser
     Open Browser    ${base_url}     ${browser}
     Get Selenium speed
     Maximize Browser Window
@@ -17,8 +17,8 @@ Open Session
 Close Session
     Close Browser
 
-
 Ir Para
         [Arguments]     ${path}
+        ${base_url}=        Pegar Valor Json        base_url
         Go To       ${base_url}${path}
 
