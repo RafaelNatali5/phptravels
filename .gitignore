@@ -3,3 +3,6 @@ output.xml
 report.html
 output
 .vscode
+Comando Abrir.txt
+__pycache__
+*.png

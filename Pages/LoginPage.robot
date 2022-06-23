@@ -3,8 +3,9 @@ Resource        ../Infra/base.robot
 Resource        ./AccountPage.robot
 ***Variables***
 ${txtUsername}      xpath://input[@placeholder="Email"]
-${txtPassword}      xpath://input[@placeholder="Passworld"]
-${btnLogin}         xpath://button/[./span[text()=%22Login%22]]
+${txtPassword}      xpath://input[@placeholder="Password"]
+${btnLogin}         xpath://button[./span[text()="Login"]]
+${lblLogin}         xpath://h5[contains(text(),"Login")]
 
 ***Keywords
 #Funções
@@ -31,13 +32,14 @@ Realize login
 #Passos
 Acessar o site principal
     Log to console      Acessou a tela principal
-    ${date}=        Get Date
-    ${other}=        Other Function
-    Log to console      ${date}
-    Log to console      ${other}
+    Ir Para  login
+
 Logar com login e senha corretos
-    Realize login       standard_user       secret_sauce
+    Realize login       user@phptravels.com       demouser
 
 Deve ser redirecionado para a tela de produtos
     Verificar label Products
+
+Verificar label Login
+    Wait Until Page Contains Element        ${lblLogin}
 
