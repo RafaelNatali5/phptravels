@@ -63,7 +63,6 @@ Preencher as informações da tela
     Realize preenchimento  ${firstname}  ${lastname}  ${email}  ${phone}  ${password}
     Click Element       ${account_type}
     Selecionar Tipo     Agent
-    Sleep       5s
 
 Clicar em Registrar
     Clicar botao signup 
