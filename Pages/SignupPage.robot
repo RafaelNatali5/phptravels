@@ -57,9 +57,13 @@ Preencher as informações da tela
     ${firstname}=       Sortear Nome
     ${lastname}=        Sortear Sobrenome
     ${email}=           Sortear Email
-    Realize preenchimento  ${firstname}  ${lastname}  ${email}  123456789  password
+    ${phone}=           Sortear Telefone
+    ${password}=        Sortear Senha
+
+    Realize preenchimento  ${firstname}  ${lastname}  ${email}  ${phone}  ${password}
     Click Element       ${account_type}
     Selecionar Tipo     Agent
+    Sleep       5s
 
 Clicar em Registrar
     Clicar botao signup 
