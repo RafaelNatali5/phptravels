@@ -1,4 +1,6 @@
 import random
+import string
+
 
 class Login():
     def sortear_nome(self):
@@ -18,3 +20,21 @@ class Login():
         email=random.choice(emails)
         email_return = nome+sobrenome+'@'+email+'.com'
         return email_return
+    
+    def sortear_senha(self):
+        tamanho = 10
+        valores = string.ascii_lowercase + string.digits
+        password = ''
+        for i in range(tamanho):
+            password += random.choice(valores)
+        return password
+
+    def sortear_telefone(self):
+        tamanho = 8
+        valores = string.digits
+        phone = ''
+        for i in range(tamanho):
+            phone += random.choice(valores)
+        return phone
+
+        
